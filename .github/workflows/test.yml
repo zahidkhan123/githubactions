@@ -1,0 +1,16 @@
+name: Test Runner
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  test-runner:
+    runs-on: self-hosted
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Run Hello World
+      run: echo "Hello, World!"
